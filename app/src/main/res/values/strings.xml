@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">PCOS</string>
+    <string name="what_is_pcos">What is PCOS ?</string>
+    <string name="about_pcos">PCOS (also called the Stein-Leventhal syndrome), is an endocrine and metabolic disorder
+        that affects women of reproductive age. A state of hormonal imbalance in the body takes place when a male
+        hormone–androgen is produced much above normal levels which lead to the disruption in the development and the
+        release of eggs during ovulation; hirsutism; acne and the growth of cysts on the ovaries. It affects the normal
+        metabolic process which is indicated by abrupt weight gain and tiredness among PCOS patients.
+    </string>
+    <string name="purpose">Polycystic Ovary Syndrome (PCOS) has become as common as common cold these days in women
+        aging towards puberty. Living with PCOS can be both embarrassing and anxiety-ridden, as symptoms ranging from
+        the growth of facial hair to infertility affect women from the outside and inside. Risk factors associated with
+        PCOS are Infertility or Subfertility, Endometrial Cancer (Endometrial Carcinoma), Diabetes, Lipid Abnormalities,
+        Cardiovascular Risks. According to [4], women diagnosed with PCOS are twice as likely to be hospitalized for
+        heart disease, diabetes, mental health conditions, reproductive disorders, and cancer of the uterine lining.
+    </string>
+    <string name="form_message">We can help you to find out whether you are suffering from PCOS or not. We will ask you
+        some questions related to your lifestyle and our model can predict the result.
+    </string>
+    <string name="lets_find_out">Let\'s find out</string>
+    <string name="why_early_screening_is_important">Why early screening is important ?</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home">Home</string>
+    <string name="over_weight">Were you overweight according to your Body Mass Index?</string>
+    <string name="name_age_text">Lets start with your name and age.</string>
+    <string name="name">Your name:</string>
+    <string name="age">Your age at which you had PCOS.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="weight_gain">Have you experienced significant or rapid weight gain and faced difficulty in losing it
+        ?
+    </string>
+    <string name="periods">Have you experienced irregular or missed periods ?</string>
+    <string name="conceiving">Difficulty in conceiving ?</string>
+    <string name="hair_text">Rate your hair growth in the mentioned areas :</string>
+    <string name="chin">Chin</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="cheecks">Cheeks</string>
+    <string name="upper_lips">Upper Lips</string>
+    <string name="between_breasts">Between Breasts</string>
+    <string name="arms">Arms</string>
+    <string name="inner_thighs">Inner Thighs</string>
+    <string name="acne">Acne or skin tags problem ?</string>
+    <string name="hair_thinning">Hair thinning or hair loss problems ?</string>
+    <string name="dark_patches">Dark patches on the back of your neck or underarms ?</string>
+    <string name="tiredness">Feeling of tiredness all the time ?</string>
+    <string name="mood_swings">Mood Swings more often than usual ?</string>
+    <string name="exercise">How many days in a week did you exercise ?</string>
+    <string name="seven">7</string>
+    <string name="six">6</string>
+    <string name="eat_outside">How many times a week did you eat outside ?</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="ten">10</string>
+    <string name="eleven">11</string>
+    <string name="twelve">12</string>
+    <string name="canned_food">Did you consume canned food more often ?</string>
+    <string name="city">Did you move to a different city/location before experiencing the above conditions ?</string>
+    <string name="next">Next</string>
+
+</resources>

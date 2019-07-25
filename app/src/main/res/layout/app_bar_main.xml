@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/app_margin_small"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/app_margin_small"
+            app:cardPreventCornerOverlap="true"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/yellow_gradient"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/what_is_pcos"
+                    android:padding="@dimen/app_padding_small"
+                    android:background="@color/greyLight"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/app_font_medium"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_pcos"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/app_padding_small"
+            />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:layout_marginTop="@dimen/app_margin_small"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/app_margin_small"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/app_margin_small"
+            app:cardPreventCornerOverlap="true"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_primary"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/why_early_screening_is_important"
+                    android:padding="@dimen/app_padding_small"
+                    android:background="@color/greyLight"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/app_font_medium"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/purpose"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/app_padding_small"
+            />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/app_margin_small"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="@dimen/app_margin_small"
+            app:cardElevation="@dimen/app_margin_small"
+            app:cardPreventCornerOverlap="true"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/form_message"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/app_padding_small"
+            />
+
+            <Button
+                    android:id="@+id/start_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/lets_find_out"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/app_padding_small"
+                    android:layout_margin="@dimen/app_margin_small"
+            />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

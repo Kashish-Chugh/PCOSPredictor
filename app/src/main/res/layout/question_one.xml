@@ -1,0 +1,1786 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/next_button">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/cv_extra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:padding="@dimen/app_padding_small"
+                    app:cardElevation="@dimen/card_elevation_10"
+                    app:cardUseCompatPadding="true"
+                    app:cardPreventCornerOverlap="true"
+                    android:visibility="invisible">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue"
+                        android:layout_centerInParent="true" android:orientation="vertical">
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name_age_text"
+                            android:textSize="@dimen/app_font_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"/>
+
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:text="@string/age"/>
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/app_padding_small"
+                            android:layout_margin="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:focusable="false"
+                            android:drawableEnd="@drawable/drop_down"
+                    />
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/cv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:padding="@dimen/app_padding_small"
+                    app:cardElevation="@dimen/card_elevation_10"
+                    app:cardUseCompatPadding="true"
+                    app:cardPreventCornerOverlap="true"
+                    android:visibility="visible">
+
+
+                <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/border_rounded"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name_age_text"
+                            android:textSize="@dimen/app_font_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/app_margin_regular"
+                            android:id="@+id/name_age_text"
+                            android:padding="@dimen/app_padding_small"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/app_padding_small"
+                            android:id="@+id/name_text"
+                            android:text="@string/name"/>
+
+                    <EditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapWords"
+                            android:padding="@dimen/app_padding_small"
+                            android:layout_margin="@dimen/app_margin_regular"
+                            tools:ignore="Autofill,LabelFor"/>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"
+                            android:id="@+id/age_text"
+                            android:textColor="@color/white"
+                            android:text="@string/age"/>
+
+                    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/app_padding_small"
+                            android:layout_margin="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:focusable="false"
+                            android:id="@+id/age"
+                            android:drawableEnd="@drawable/drop_down"
+                    />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/cv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:padding="@dimen/app_padding_small"
+                    app:cardElevation="@dimen/card_elevation_10"
+                    app:cardUseCompatPadding="true"
+                    android:visibility="gone"
+                    app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                        android:id="@+id/ll2"
+                        android:layout_width="match_parent"
+                        android:paddingStart="@dimen/app_padding_small"
+                        android:paddingEnd="@dimen/app_padding_small"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingBottom="@dimen/app_padding_small"
+                        android:background="@drawable/borderless_rounded"
+                        android:orientation="vertical">
+
+                    <Button
+                            android:id="@+id/back2"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:stateListAnimator="@null"
+                            android:layout_margin="@dimen/app_margin_small"
+                            android:drawableStart="@drawable/back"
+                            android:background="@color/blue"
+                    />
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/app_padding_small"
+                            android:text="@string/over_weight"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/over_weight_yes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/yes"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/over_weight_no"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/no"
+                                android:stateListAnimator="@null" android:textAllCaps="false"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                                tools:ignore="ButtonStyle"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:text="@string/weight_gain"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/weight_gain_yes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/yes"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/weight_gain_no"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/no"
+                                android:stateListAnimator="@null"
+                                android:textAllCaps="false"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/cv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:padding="@dimen/app_padding_small"
+                    app:cardElevation="@dimen/card_elevation_10"
+                    app:cardUseCompatPadding="true"
+                    android:visibility="gone"
+                    app:cardPreventCornerOverlap="true">
+
+
+                <LinearLayout
+                        android:id="@+id/ll3"
+
+                        android:paddingStart="@dimen/app_padding_small"
+                        android:paddingEnd="@dimen/app_padding_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue"
+                        android:paddingBottom="@dimen/app_padding_small"
+
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                    <Button
+                            android:id="@+id/back3"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:stateListAnimator="@null"
+                            android:layout_margin="@dimen/app_margin_small"
+                            android:drawableStart="@drawable/back"
+                            android:background="@color/blue"
+                    />
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/app_padding_small"
+                            android:text="@string/periods"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/periods_yes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/yes"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/periods_no"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/no"
+                                android:textAllCaps="false"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:text="@string/conceiving"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/conceiving_yes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/yes"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/conceiving_no"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/no"
+                                android:stateListAnimator="@null"
+                                android:textAllCaps="false"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/cv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:padding="@dimen/app_padding_small"
+                    app:cardElevation="@dimen/card_elevation_10"
+                    app:cardUseCompatPadding="true"
+                    android:visibility="gone"
+                    app:cardPreventCornerOverlap="true">
+
+
+                <LinearLayout
+                        android:id="@+id/ll4"
+                        android:paddingBottom="@dimen/app_padding_small"
+
+                        android:paddingStart="@dimen/app_padding_small"
+                        android:paddingEnd="@dimen/app_padding_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+
+                    <Button
+                            android:id="@+id/back4"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:stateListAnimator="@null"
+                            android:layout_margin="@dimen/app_margin_small"
+                            android:drawableStart="@drawable/back"
+                            android:background="@color/blue"
+                    />
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hair_text"
+                            android:textSize="@dimen/app_font_medium"
+                            android:textColor="@color/white"
+                            android:layout_margin="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/app_padding_small"
+                            android:text="@string/chin"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/chin1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/one"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/chin2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/two"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/chin3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:stateListAnimator="@null"
+                                android:text="@string/three"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/chin4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/four"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/chin5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/five"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:stateListAnimator="@null"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:text="@string/cheecks"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/cheek1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/one"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/cheek2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/two"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/cheek3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:stateListAnimator="@null"
+                                android:layout_weight="1"
+                                android:text="@string/three"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/cheek4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:stateListAnimator="@null"
+                                android:text="@string/four"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/cheek5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/five"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+
+                    </LinearLayout>
+
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:text="@string/upper_lips"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/upper1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/one"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/upper2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/two"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/upper3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/three"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/upper4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/four"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/upper5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/five"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+
+                    </LinearLayout>
+
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:text="@string/between_breasts"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/breast1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:stateListAnimator="@null"
+                                android:text="@string/one"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/breast2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/two"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/breast3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:stateListAnimator="@null"
+                                android:text="@string/three"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/breast4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/four"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/breast5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/five"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:stateListAnimator="@null"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+
+                    </LinearLayout>
+
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:text="@string/arms"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/arm1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/one"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/arm2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/two"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/arm3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/three"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/arm4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/four"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/arm5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/five"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+
+                    </LinearLayout>
+
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:text="@string/inner_thighs"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" tools:ignore="TooManyViews">
+
+                        <Button
+                                android:id="@+id/thigh1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/one"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/thigh2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:stateListAnimator="@null"
+                                android:text="@string/two"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/thigh3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:stateListAnimator="@null"
+                                android:text="@string/three"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/thigh4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/four"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/thigh5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/five"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:stateListAnimator="@null"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/cv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:padding="@dimen/app_padding_small"
+                    app:cardElevation="@dimen/card_elevation_10"
+                    app:cardUseCompatPadding="true"
+                    android:visibility="gone"
+                    app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                        android:id="@+id/ll5"
+                        android:paddingBottom="@dimen/app_padding_small"
+
+                        android:paddingStart="@dimen/app_padding_small"
+                        android:paddingEnd="@dimen/app_padding_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue"
+                        android:orientation="vertical">
+
+                    <Button
+                            android:id="@+id/back5"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:stateListAnimator="@null"
+                            android:layout_margin="@dimen/app_margin_small"
+                            android:drawableStart="@drawable/back"
+                            android:background="@color/blue"
+                    />
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/app_padding_small"
+                            android:text="@string/acne"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/acne_yes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/yes"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/acne_no"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/no"
+                                android:textAllCaps="false"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:text="@string/hair_thinning"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/thinning_yes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/yes"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/thinning_no"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/no"
+                                android:stateListAnimator="@null"
+                                android:textAllCaps="false"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+                    </LinearLayout>
+
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:text="@string/dark_patches"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/patches_yes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/yes"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:stateListAnimator="@null"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/patches_no"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/no"
+                                android:textAllCaps="false"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/cv6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:padding="@dimen/app_padding_small"
+                    app:cardElevation="@dimen/card_elevation_10"
+                    app:cardUseCompatPadding="true"
+                    android:visibility="gone"
+                    app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                        android:paddingBottom="@dimen/app_padding_small"
+
+                        android:paddingStart="@dimen/app_padding_small"
+                        android:paddingEnd="@dimen/app_padding_small"
+                        android:id="@+id/ll6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue"
+                        android:orientation="vertical">
+
+                    <Button
+                            android:id="@+id/back6"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:stateListAnimator="@null"
+                            android:layout_margin="@dimen/app_margin_small"
+                            android:drawableStart="@drawable/back"
+                            android:background="@color/blue"
+                    />
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/app_padding_small"
+                            android:text="@string/tiredness"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/tiredness_yes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/yes"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/tiredness_no"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/no"
+                                android:stateListAnimator="@null"
+                                android:textAllCaps="false"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:text="@string/mood_swings"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/mood_swings_yes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/yes"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/mood_swings_no" android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/no"
+                                android:stateListAnimator="@null"
+                                android:textAllCaps="false"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/cv7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:padding="@dimen/app_padding_small"
+                    app:cardElevation="@dimen/card_elevation_10"
+                    app:cardUseCompatPadding="true"
+                    android:visibility="gone"
+                    app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                        android:id="@+id/ll7"
+                        android:paddingStart="@dimen/app_padding_small"
+                        android:paddingEnd="@dimen/app_padding_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/app_padding_small"
+
+                        android:background="@color/blue"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                    <Button
+                            android:id="@+id/back7"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:stateListAnimator="@null"
+                            android:layout_margin="@dimen/app_margin_small"
+                            android:drawableStart="@drawable/back"
+                            android:background="@color/blue"
+                    />
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/app_padding_small"
+                            android:text="@string/exercise"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/exercise1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/one"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/exercise2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/two"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/exercise3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:stateListAnimator="@null"
+                                android:text="@string/three"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/exercise4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:stateListAnimator="@null"
+                                android:layout_weight="1"
+                                android:text="@string/four"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/exercise5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/five"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/exercise6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/six"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:stateListAnimator="@null"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/exercise7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/seven"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/app_padding_small"
+                            android:text="@string/eat_outside"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/eat1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/one"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/eat2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/two"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/eat3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/three"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/eat4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:stateListAnimator="@null"
+                                android:text="@string/four"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/eat5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:stateListAnimator="@null"
+                                android:layout_weight="1"
+                                android:text="@string/five"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/eat6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/six"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/eat7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/seven"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:stateListAnimator="@null"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/eat8"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:stateListAnimator="@null"
+                                android:layout_weight="1"
+                                android:text="@string/eight"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/eat9"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/nine"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/eat10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/ten"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:stateListAnimator="@null"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/eat11"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/eleven"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/eat12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/twelve"
+                                android:stateListAnimator="@null"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                    android:id="@+id/cv8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:padding="@dimen/app_padding_small"
+                    app:cardElevation="@dimen/card_elevation_10"
+                    app:cardUseCompatPadding="true"
+                    app:cardPreventCornerOverlap="true"
+                    android:visibility="gone">
+
+
+                <LinearLayout
+                        android:id="@+id/ll8"
+                        android:paddingBottom="@dimen/app_padding_small"
+
+                        android:paddingStart="@dimen/app_padding_small"
+                        android:paddingEnd="@dimen/app_padding_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                    <Button
+                            android:id="@+id/back8"
+                            android:layout_width="16dp"
+                            android:stateListAnimator="@null"
+                            android:layout_height="16dp"
+                            android:layout_margin="@dimen/app_margin_small"
+                            android:drawableStart="@drawable/back"
+                            android:background="@color/blue"
+                    />
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/app_padding_small"
+                            android:text="@string/canned_food"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/canned_yes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/yes"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/canned_no"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/no"
+                                android:textAllCaps="false"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@color/colorPrimaryDark"/>
+
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/app_margin_regular"
+                            android:padding="@dimen/app_padding_small"
+                            android:textColor="@color/white"
+                            android:text="@string/city"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <Button
+                                android:id="@+id/city_yes"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/yes"
+                                android:background="@color/blue"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textAllCaps="false"
+                                android:stateListAnimator="@null"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+
+                        <Button
+                                android:id="@+id/city_no"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/no"
+                                android:textAllCaps="false"
+                                android:background="@color/blue"
+                                android:stateListAnimator="@null"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginStart="@dimen/app_margin_small"
+                                android:layout_marginEnd="@dimen/app_padding_small"
+                        />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:text="@string/next"
+    />
+
+    <ProgressBar
+            android:id="@+id/progress_bar"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>
